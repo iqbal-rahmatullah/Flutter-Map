@@ -23,16 +23,24 @@ class _Part2ChangeTileState extends State<Part2ChangeTile> {
             userAgentPackageName: 'com.example.app',
           ),
           //
-          CircleLayer(
-            circles: [
-              CircleMarker(
+          // CircleLayer(
+          //   circles: [
+          //     CircleMarker(
+          //       point: LatLng(-7.28887331068914, 112.80926395581986),
+          //       radius: 500,
+          //       useRadiusInMeter: true,
+          //       color: Colors.red.withOpacity(0.3),
+          //       borderColor: Colors.red.withOpacity(0.7),
+          //       borderStrokeWidth: 2,
+          //     )
+          //   ],
+          // )
+          const MarkerLayer(
+            markers: [
+              Marker(
                 point: LatLng(-7.28887331068914, 112.80926395581986),
-                radius: 500,
-                useRadiusInMeter: true,
-                color: Colors.red.withOpacity(0.3),
-                borderColor: Colors.red.withOpacity(0.7),
-                borderStrokeWidth: 2,
-              )
+                child: Icon(Icons.location_on, size: 40, color: Colors.red),
+              ),
             ],
           )
         ]);
