@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learn_fluttermap/pages/change_tile.dart';
 import 'package:learn_fluttermap/pages/demonstration.dart';
 
 void main() {
@@ -12,7 +13,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       home: Scaffold(
-        body: DemonstrationPage(),
+        body: Part2ChangeTile(),
       ),
     );
   }
